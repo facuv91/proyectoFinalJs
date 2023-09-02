@@ -1,0 +1,135 @@
+
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: calc(33.33% - 40px);
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  max-width: 100%;
+}
+
+.precio {
+  color: #3498db;
+}
+
+.agregar {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.agregar:hover {
+  background-color: #27ae60;
+}
+
+#lista-carrito {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#lista-carrito li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#lista-carrito img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.eliminar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.eliminar:hover {
+  background-color: #c0392b;
+}
+
+#total {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+#comprar, #limpiar {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#comprar:hover, #limpiar:hover {
+  background-color: #2980b9;
+}
+
+#mensajeCompra {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+#carrito-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f39c12;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volver-inicio {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#volver-inicio:hover {
+  background-color: #2980b9;
+}
+
+
+@media (min-width: 768px) {
+  .producto {
+    width: calc(25% - 40px);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .producto {
+    width: calc(50% - 40px);
+  }
+}
